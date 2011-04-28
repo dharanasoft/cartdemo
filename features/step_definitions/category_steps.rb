@@ -33,3 +33,11 @@ Then /^I should see "([^"]*)" in the list of categories$/ do |category_name|
   page.should have_content(category_name)
 end
 
+Given /^I have the following products under "([^"]*)"$/ do |category_name, product_table|
+  category = Category.where(:name=>category_name).first
+  product_table.hashes.each do |prod|
+    product = category.products.build prod
+    product.save!
+  end
+end
+
