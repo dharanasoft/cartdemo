@@ -10,6 +10,6 @@ Feature: Manage categories
     | audio |
     | electronics |
     And I visit the home page
-    I should see "book"
-    I should see "audio"
-    I should see "electronics"
+    Then I should see "book"
+    And I should see "audio"
+    And I should see "electronics"
