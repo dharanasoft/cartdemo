@@ -8,7 +8,7 @@ gem 'mongoid', '~> 2.0'
 gem 'bson_ext', '~> 1.3'
 gem 'jquery-rails'
 gem 'formtastic'
-
+gem 'thin'
 
 group :development, :test do
   gem 'capybara' # capybara is nicer than webrat

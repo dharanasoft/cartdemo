@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
     @categories = Category.all
     @category = Category.find(params[:category_id])
     @products = @category.products
+    render(:partial=>"all_products", :layout=>false) if request.xhr?
   end
   def new
     @categories = Category.all

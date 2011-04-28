@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.all
+    render :index, :layout=>!request.xhr?
   end
   def new
     @categories = Category.all
