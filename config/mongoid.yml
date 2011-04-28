@@ -10,9 +10,12 @@ development:
   <<: *defaults
   database: cart_development
 
-test:
+test: &test
   <<: *defaults
   database: cart_test
+
+cucumber:
+  <<: *test
 
 # set these environment variables on your prod server
 production:
