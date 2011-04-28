@@ -10,12 +10,14 @@ Feature: Manage categories
     | audio |
     | electronics |
     And I visit the home page
+    And I click on the "Products" link
     Then I should see "book"
     And I should see "audio"
     And I should see "electronics"
 
   Scenario: Add a category
     Given I am on the home page
+    And I click on the "Products" link
     And I click on the "New category" link
     And I fill in "books" for "Name"
     And I click on "Create Category"
@@ -32,6 +34,7 @@ Feature: Manage categories
     | Anthem - by Ayn Rand    | Objectivism at its best   |
     | The Mythical Man Month  | Every PM should read this |
     When I visit the home page
+    And I click on the "Products" link
     And I click on the "books" link
     Then I should see "Anthem - by Ayn Rand"
     And I should see "The Mythical Man Month"
