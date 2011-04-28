@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
     if(@product.save)
       flash[:notice] = "Product added successfully"
       redirect_to @product if !request.xhr?
-      redirect_to category_products_path(@category)
+      redirect_to category_products_path(@category) if request.xhr?
     else
       render :action=>:new
     end
