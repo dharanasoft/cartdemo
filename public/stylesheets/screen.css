@@ -2,4 +2,208 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import "compass/reset" ;;
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 1, ../../app/stylesheets/_categories.sass */
+.category {
+  border: 2px solid #dddddd;
+  margin: 2px;
+  padding: 5px 0;
+}
+/* line 5, ../../app/stylesheets/_categories.sass */
+.category .name {
+  text-align: center;
+  font-size: 1.2em;
+}
+/* line 8, ../../app/stylesheets/_categories.sass */
+.category .name a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 1, ../../app/stylesheets/_products.sass */
+.product {
+  border-bottom: 2px solid #dddddd;
+  padding: 5px 0;
+  margin: 10px;
+}
+/* line 5, ../../app/stylesheets/_products.sass */
+.product .name {
+  font-size: 1.2em;
+}
+/* line 7, ../../app/stylesheets/_products.sass */
+.product .description {
+  font-size: smaller;
+  color: #aaaaaa;
+}
+
+/* line 11, ../../app/stylesheets/screen.sass */
+#container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  font-family: "Ubuntu", sans-serif;
+}
+/* line 14, ../../app/stylesheets/screen.sass */
+#container #header {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+}
+/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #header {
+  overflow-x: hidden;
+}
+/* line 16, ../../app/stylesheets/screen.sass */
+#container #header h1 {
+  float: right;
+  font-size: 3em;
+}
+/* line 19, ../../app/stylesheets/screen.sass */
+#container #header ul#nav {
+  margin-top: 1.8em;
+  border-bottom: 3px solid #555555;
+}
+/* line 22, ../../app/stylesheets/screen.sass */
+#container #header ul#nav li {
+  display: inline-block;
+  margin: 10px 10px 5px 10px;
+}
+/* line 25, ../../app/stylesheets/screen.sass */
+#container #header ul#nav li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 5px;
+  border-left: 1px solid #555555;
+  border-right: 1px solid #555555;
+  border-top: 1px solid #555555;
+}
+/* line 33, ../../app/stylesheets/screen.sass */
+#container #header ul#nav li.selected a {
+  background-color: #555555;
+  color: #eeeeee;
+}
+/* line 37, ../../app/stylesheets/screen.sass */
+#container #content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  min-height: 500px;
+  margin-top: 1em;
+}
+/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #content {
+  overflow-x: hidden;
+}
+/* line 41, ../../app/stylesheets/screen.sass */
+#container #content #left {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+}
+/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #content #left {
+  overflow-x: hidden;
+}
+/* line 43, ../../app/stylesheets/screen.sass */
+#container #content #right {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 670px;
+}
+/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #content #right {
+  overflow-x: hidden;
+}
+/* line 45, ../../app/stylesheets/screen.sass */
+#container #footer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  font-size: small;
+  color: #bbbbbb;
+  text-align: center;
+}
+/* line 147, ../../../../../../.rvm/gems/ruby-1.9.2-p180@r3/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #footer {
+  overflow-x: hidden;
+}
+
+/* line 50, ../../app/stylesheets/screen.sass */
+a.button {
+  display: inline-block;
+  padding: 5px;
+  color: #eeeeee;
+  background-color: #777777;
+  text-decoration: none;
+}

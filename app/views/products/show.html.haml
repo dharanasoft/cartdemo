@@ -1,3 +1,4 @@
 = render :partial=>"categories/leftbar"
 #right
   =render @product
+  =link_to "Back to #{@category.name}", category_products_path(@category), :class=>"button"

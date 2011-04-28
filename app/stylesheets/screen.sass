@@ -3,4 +3,53 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "compass/reset"
+@import "blueprint"
+@import "blueprint/grid"
+@import categories
+@import products
+#container
+  +container
+  font-family: "Ubuntu", sans-serif
+  #header
+    +column(24)
+    h1
+      float: right
+      font-size: 3em
+    ul#nav
+      margin-top: 1.8em
+      border-bottom: 3px solid #555
+      li
+        display: inline-block
+        margin: 10px 10px 5px 10px
+        a
+          text-decoration: none
+          color: #333
+          padding: 5px
+          border-left: 1px solid #555
+          border-right: 1px solid #555
+          border-top: 1px solid #555
+      li.selected
+        a
+          background-color: #555
+          color: #eee
+
+  #content
+    +column(24)
+    min-height: 500px
+    margin-top: 1em
+    #left
+      +column(6)
+    #right
+      +column(17)
+  #footer
+    +column(24)
+    font-size: small
+    color: #bbb
+    text-align: center
+a.button
+  display: inline-block
+  padding: 5px
+  color: #eee
+  background-color: #777
+  text-decoration: none

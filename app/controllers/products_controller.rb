@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
   def create
     @category = Category.find(params[:category_id])
     @product = Product.new(params[:product])
+    @product.category = @category
     if(@product.save)
       flash[:notice] = "Product added successfully"
       redirect_to @product
