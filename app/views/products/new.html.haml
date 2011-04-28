@@ -1,5 +1,3 @@
 = render :partial=>"categories/leftbar"
 #right
-  = semantic_form_for [@category,@product] do |f|
-    =f.inputs :name, :description
-    =f.buttons 
+  = render :partial=>"form"

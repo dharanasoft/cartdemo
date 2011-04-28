@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
     @categories = Category.all
     @category = Category.find(params[:category_id])
     @product = @category.products.build
+    render :partial=>"form"
   end
   def create
     @category = Category.find(params[:category_id])
@@ -16,7 +17,8 @@ class ProductsController < ApplicationController
     @product.category = @category
     if(@product.save)
       flash[:notice] = "Product added successfully"
-      redirect_to @product
+      redirect_to @product if !request.xhr?
+      redirect_to category_products_path(@category)
     else
       render :action=>:new
     end

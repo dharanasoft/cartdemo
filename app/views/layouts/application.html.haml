@@ -5,11 +5,12 @@
   = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
   = stylesheet_link_tag 'formtastic.css', :media => 'screen, projection'
   = stylesheet_link_tag 'formtastic_changes.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'jquery-ui-1.8.12.custom.css', :media => 'screen, projection'
   = stylesheet_link_tag 'print.css', :media => 'print'
   /[if IE]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
   
-  = javascript_include_tag 'jquery', 'rails', 'application'
+  = javascript_include_tag 'jquery', 'rails','jquery-ui-1.8.12.custom.min', 'jquery.form', 'application'
   = csrf_meta_tag 
 
 %body
