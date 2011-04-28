@@ -1,0 +1,3 @@
+A very simple cart with categories and products
+
+Uses cucumber, mongoid, haml, compass and sass
