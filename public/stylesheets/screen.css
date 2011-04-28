@@ -126,16 +126,21 @@ footer, header, hgroup, menu, nav, section {
   font-size: 3em;
 }
 /* line 19, ../../app/stylesheets/screen.sass */
+#container #header h1 a {
+  color: black;
+  text-decoration: none;
+}
+/* line 22, ../../app/stylesheets/screen.sass */
 #container #header ul#nav {
   margin-top: 1.8em;
   border-bottom: 3px solid #555555;
 }
-/* line 22, ../../app/stylesheets/screen.sass */
+/* line 25, ../../app/stylesheets/screen.sass */
 #container #header ul#nav li {
   display: inline-block;
   margin: 10px 10px 5px 10px;
 }
-/* line 25, ../../app/stylesheets/screen.sass */
+/* line 28, ../../app/stylesheets/screen.sass */
 #container #header ul#nav li a {
   text-decoration: none;
   color: #333333;
@@ -144,12 +149,12 @@ footer, header, hgroup, menu, nav, section {
   border-right: 1px solid #555555;
   border-top: 1px solid #555555;
 }
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 36, ../../app/stylesheets/screen.sass */
 #container #header ul#nav li.selected a {
   background-color: #555555;
   color: #eeeeee;
 }
-/* line 37, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 #container #content {
   display: inline;
   float: left;
@@ -162,7 +167,7 @@ footer, header, hgroup, menu, nav, section {
 * html #container #content {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/screen.sass */
+/* line 44, ../../app/stylesheets/screen.sass */
 #container #content #left {
   display: inline;
   float: left;
@@ -173,7 +178,7 @@ footer, header, hgroup, menu, nav, section {
 * html #container #content #left {
   overflow-x: hidden;
 }
-/* line 43, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 #container #content #right {
   display: inline;
   float: left;
@@ -184,7 +189,7 @@ footer, header, hgroup, menu, nav, section {
 * html #container #content #right {
   overflow-x: hidden;
 }
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 48, ../../app/stylesheets/screen.sass */
 #container #footer {
   display: inline;
   float: left;
@@ -199,7 +204,7 @@ footer, header, hgroup, menu, nav, section {
   overflow-x: hidden;
 }
 
-/* line 50, ../../app/stylesheets/screen.sass */
+/* line 53, ../../app/stylesheets/screen.sass */
 a.button {
   display: inline-block;
   padding: 5px;

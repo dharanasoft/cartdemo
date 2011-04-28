@@ -15,7 +15,7 @@
 %body
   #container
     #header
-      %h1 Cart
+      %h1= link_to "Cart", root_path
       %ul#nav
         %li(class="#{'selected' if controller_name=="categories" || controller_name=="products" }")= link_to "Products", categories_path 
         %li= link_to "Other", "#"
