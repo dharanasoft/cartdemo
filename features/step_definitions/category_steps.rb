@@ -40,4 +40,18 @@ Given /^I have the following products under "([^"]*)"$/ do |category_name, produ
     product.save!
   end
 end
+Given /^I am on the "([^"]*)" category page$/ do |category_name|
+  category = Category.where(:name=>category_name).first
+  visit category_products_path(category)
+end
+
+When /^I click on "([^"]*)" button$/ do |button_name|
+  click_button(button_name)
+end
+
+
+Then /^I should be on the "([^"]*)" product page$/ do |product_name|
+  product = Product.where(:name=>product_name).first
+  current_path.should == product_path(product)
+end
 

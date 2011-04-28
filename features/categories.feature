@@ -35,3 +35,18 @@ Feature: Manage categories
     And I click on the "books" link
     Then I should see "Anthem - by Ayn Rand"
     And I should see "The Mythical Man Month"
+
+  Scenario: Add product
+    Given that I have the following categories
+    | name |
+    | books |
+    | audio |
+    | electronics |
+    And I am on the "books" category page
+    When I click on the "New product" link
+    And I fill in "Anthem - by Ayn Rand" for "Name"
+    And I fill in "Objectivism at its best" for "Description"
+    And I click on "Create Product" button
+    Then I should see "Anthem - by Ayn Rand"
+    And I should see "Objectivism at its best"
+    And I should be on the "Anthem - by Ayn Rand" product page
